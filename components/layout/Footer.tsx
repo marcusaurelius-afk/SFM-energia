@@ -29,7 +29,7 @@ export function Footer() {
               className="flex items-center gap-2 mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg w-fit"
               aria-label="SolarCrate home"
             >
-              <Image src="/logo.png" alt="SolarCrate" height={28} width={112} className="h-7 w-auto" />
+              <Image src="/logo.png" alt="SolarCrate" height={28} width={112} className="h-7 w-auto brightness-0 invert" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">
               Energia solare mobile. Zero gasolio. Zero rumore.
