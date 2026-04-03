@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(apiKey)
 
     const { error } = await resend.emails.send({
-      from: 'SolarCrate <noreply@solarcrate.it>',
+      from: 'SolarCrate <onboarding@resend.dev>',
       to: [toEmail],
       reply_to: data.email,
       subject: `[SolarCrate] Nuova richiesta da ${data.nome}${data.azienda ? ` — ${data.azienda}` : ''}`,
