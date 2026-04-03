@@ -379,16 +379,15 @@ export default function ContattiPage() {
               <ol className="flex flex-col gap-3 text-sm text-green-200">
                 <li className="flex items-start gap-2">
                   <span className="font-display font-bold text-accent shrink-0">1.</span>
-                  Riceviamo la tua richiesta e la assegniamo a un tecnico commerciale.
+                  <span>Riceviamo la tua richiesta e la assegniamo a un tecnico commerciale.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="font-display font-bold text-accent shrink-0">2.</span>
-                  Ti contattiamo entro <strong className="text-white">24 ore lavorative</strong> per
-                  capire meglio le tue esigenze.
+                  <span>Ti contattiamo entro <strong className="text-white">24 ore lavorative</strong> per capire meglio le tue esigenze.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="font-display font-bold text-accent shrink-0">3.</span>
-                  Prepariamo un preventivo dettagliato, gratuito e senza impegno.
+                  <span>Prepariamo un preventivo dettagliato, gratuito e senza impegno.</span>
                 </li>
               </ol>
             </div>
