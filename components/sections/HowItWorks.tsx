@@ -13,7 +13,7 @@ const steps = [
     description:
       'Il container arriva sul tuo sito con camion standard. Posizionamento con gru in 15 minuti. Nessun permesso speciale per il trasporto.',
     detail: 'Dimensioni ISO 20\': 6,06 × 2,44 × 2,59 m — passa su qualsiasi strada.',
-    imageLabel: 'FOTO: Camion con container SFM Energy in arrivo al cantiere',
+    imageLabel: 'FOTO: Camion con container SolarCrate in arrivo al cantiere',
   },
   {
     number: '02',

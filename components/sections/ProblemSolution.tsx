@@ -63,7 +63,7 @@ export function ProblemSolution() {
     <Section bg="alt" id="problema">
       <Container>
         <SectionHeader
-          eyebrow="Perché SFM Energy"
+          eyebrow="Perché SolarCrate"
           title="Il diesel ha un costo reale. Calcolalo."
           subtitle="Ogni mese di generatore diesel costa in carburante, in rumore e in emissioni. Ecco il confronto diretto."
         />
@@ -111,7 +111,7 @@ export function ProblemSolution() {
                 <div className="flex items-start gap-2 mb-2">
                   <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
                   <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                    SFM Energy
+                    SolarCrate
                   </span>
                 </div>
                 <div className="font-display text-2xl font-bold text-primary mb-1">

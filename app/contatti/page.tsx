@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Send, Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Send, Mail, MapPin, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Section'
 
@@ -331,7 +331,7 @@ export default function ContattiPage() {
               </h2>
               <div className="flex flex-col gap-4">
                 <a
-                  href="mailto:info@sfm-energy.it"
+                  href="mailto:info@solarcrate.it"
                   className="flex items-start gap-3 group hover:text-primary transition-colors focus-visible:outline-none focus-visible:underline"
                 >
                   <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shadow-card shrink-0 group-hover:bg-primary-50 transition-colors">
@@ -340,22 +340,7 @@ export default function ContattiPage() {
                   <div>
                     <div className="text-xs text-text-light font-medium mb-0.5">Email</div>
                     <div className="text-sm font-semibold text-text group-hover:text-primary transition-colors">
-                      info@sfm-energy.it
-                    </div>
-                  </div>
-                </a>
-
-                <a
-                  href="tel:+390200000000"
-                  className="flex items-start gap-3 group hover:text-primary transition-colors focus-visible:outline-none focus-visible:underline"
-                >
-                  <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shadow-card shrink-0 group-hover:bg-primary-50 transition-colors">
-                    <Phone size={16} className="text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-text-light font-medium mb-0.5">Telefono</div>
-                    <div className="text-sm font-semibold text-text group-hover:text-primary transition-colors">
-                      +39 02 0000 0000
+                      info@solarcrate.it
                     </div>
                   </div>
                 </a>
@@ -367,7 +352,7 @@ export default function ContattiPage() {
                   <div>
                     <div className="text-xs text-text-light font-medium mb-0.5">Sede</div>
                     <div className="text-sm text-text">
-                      Via Placeholder 1<br />20100 Milano (MI)
+                      Milano (MI)
                     </div>
                   </div>
                 </div>

@@ -64,11 +64,11 @@ export function ProductStats() {
         {/* Product image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <ImagePlaceholder
-            label="FOTO: Container SFM Energy chiuso — pronto per il trasporto su camion"
+            label="FOTO: Container SolarCrate chiuso — pronto per il trasporto su camion"
             aspectRatio="aspect-[16/10]"
           />
           <ImagePlaceholder
-            label="FOTO: Container SFM Energy con ali aperte — vista aerea con pannelli esposti"
+            label="FOTO: Container SolarCrate con ali aperte — vista aerea con pannelli esposti"
             aspectRatio="aspect-[16/10]"
           />
         </div>

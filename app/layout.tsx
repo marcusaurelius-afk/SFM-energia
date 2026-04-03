@@ -15,13 +15,13 @@ import { Footer } from '@/components/layout/Footer'
  * Then: <html lang="it" className={`${outfit.variable} ${plusJakarta.variable}`}>
  */
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sfm-energy.it'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.solarcrate.it'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'SFM Energy — Container Fotovoltaici Mobili | Noleggio e Vendita',
-    template: '%s | SFM Energy',
+    default: 'SolarCrate — Container Fotovoltaici Mobili | Noleggio e Vendita',
+    template: '%s | SolarCrate',
   },
   description:
     'Container fotovoltaici da 20 kWp a noleggio o in vendita. Sostituisci il generatore diesel: zero carburante, zero rumore, zero emissioni. Per cantieri, eventi e siti off-grid in Lombardia.',
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     'fotovoltaico mobile',
     'generatore solare silenzioso',
   ],
-  authors: [{ name: 'SFM Energy' }],
-  creator: 'SFM Energy',
-  publisher: 'SFM Energy',
+  authors: [{ name: 'SolarCrate' }],
+  creator: 'SolarCrate',
+  publisher: 'SolarCrate',
   robots: {
     index: true,
     follow: true,
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'it_IT',
     url: siteUrl,
-    siteName: 'SFM Energy',
-    title: 'SFM Energy — Container Fotovoltaici Mobili per Cantieri ed Eventi',
+    siteName: 'SolarCrate',
+    title: 'SolarCrate — Container Fotovoltaici Mobili per Cantieri ed Eventi',
     description:
       'Container fotovoltaici da 20 kWp: zero diesel, zero rumore, zero emissioni. Noleggio e vendita in Lombardia.',
     images: [
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'SFM Energy — Container Fotovoltaico Mobile aperto con pannelli solari dispiegati',
+        alt: 'SolarCrate — Container Fotovoltaico Mobile aperto con pannelli solari dispiegati',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SFM Energy — Container Fotovoltaici Mobili',
+    title: 'SolarCrate — Container Fotovoltaici Mobili',
     description:
       'Zero diesel, zero rumore. Container fotovoltaici da 20 kWp per cantieri, eventi e siti off-grid.',
     images: ['/og-image.jpg'],

@@ -30,7 +30,7 @@ export function Hero() {
   return (
     <section
       className="relative min-h-screen flex flex-col justify-center bg-background overflow-hidden pt-20"
-      aria-label="Hero — SFM Energy Container Fotovoltaici"
+      aria-label="Hero — SolarCrate Container Fotovoltaici"
     >
       {/* Background geometric pattern */}
       <div
@@ -151,7 +151,7 @@ export function Hero() {
           >
             {/* Main image placeholder */}
             <ImagePlaceholder
-              label="FOTO: Container SFM Energy con ali solari aperte — vista frontale in cantiere"
+              label="FOTO: Container SolarCrate con ali solari aperte — vista frontale in cantiere"
               aspectRatio="aspect-[4/3]"
               className="w-full shadow-card-lg border-0 bg-gray-100"
             />
