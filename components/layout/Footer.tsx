@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Mail, MapPin } from 'lucide-react'
+import { SolarCrateLogo } from '@/components/ui/SolarCrateLogo'
 
 const footerLinks = {
   sito: [
@@ -26,10 +26,10 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link
               href="/"
-              className="flex items-center gap-2 mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg w-fit"
+              className="mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg w-fit block"
               aria-label="SolarCrate home"
             >
-              <Image src="/logo.png" alt="SolarCrate" height={28} width={112} className="h-7 w-auto brightness-0 invert" />
+              <SolarCrateLogo variant="dark" height={44} />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">
               Energia solare mobile. Zero gasolio. Zero rumore.
