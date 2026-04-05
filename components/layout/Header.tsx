@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/Button'
+import { SolarCrateLogo } from '@/components/ui/SolarCrateLogo'
 
 const navLinks = [
   { href: '/#prodotto', label: 'Prodotto' },
@@ -57,7 +58,7 @@ export function Header() {
             className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
             aria-label="SolarCrate — Torna alla home"
           >
-            <Image src="/logo.png" alt="SolarCrate" height={36} width={144} className="h-9 w-auto" />
+            <SolarCrateLogo variant="light" height={40} />
           </Link>
 
           {/* Desktop Nav */}
