@@ -6,6 +6,7 @@ import { HowItWorks } from '@/components/sections/HowItWorks'
 import { SavingsCalculator } from '@/components/sections/SavingsCalculator'
 import { CustomerSegments } from '@/components/sections/CustomerSegments'
 import { TechnicalSpecs } from '@/components/sections/TechnicalSpecs'
+import { TeamSection } from '@/components/sections/TeamSection'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sfm-energy.it'
@@ -76,6 +77,7 @@ export default function Home() {
       <SavingsCalculator />
       <CustomerSegments />
       <TechnicalSpecs />
+      <TeamSection />
       <FinalCTA />
     </>
   )
