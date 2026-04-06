@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Truck, SunMedium, Plug } from 'lucide-react'
 import { Section, Container, SectionHeader } from '@/components/ui/Section'
 import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
+import { SFM20Animation } from '@/components/ui/SFM20Animation'
 
 const steps = [
   {
@@ -87,13 +88,19 @@ export function HowItWorks() {
                   </div>
                 </div>
 
-                {/* Image */}
+                {/* Image / Animation */}
                 <div className={isEven ? 'lg:order-1' : ''}>
-                  <ImagePlaceholder
-                    label={step.imageLabel}
-                    aspectRatio="aspect-[4/3]"
-                    className="w-full shadow-card-lg"
-                  />
+                  {i === 1 ? (
+                    <div className="w-full rounded-2xl overflow-hidden shadow-card-lg bg-white flex items-center justify-center p-4">
+                      <SFM20Animation className="w-full" />
+                    </div>
+                  ) : (
+                    <ImagePlaceholder
+                      label={step.imageLabel}
+                      aspectRatio="aspect-[4/3]"
+                      className="w-full shadow-card-lg"
+                    />
+                  )}
                 </div>
               </motion.div>
             )
