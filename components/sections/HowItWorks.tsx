@@ -64,15 +64,15 @@ export function HowItWorks() {
               >
                 {/* Text */}
                 <div className={isEven ? 'lg:order-2' : ''}>
-                  <div className="flex items-center gap-4 mb-5">
-                    <span className="font-display text-5xl font-bold text-primary/15 leading-none select-none">
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="font-display text-4xl sm:text-5xl font-bold text-primary/15 leading-none select-none shrink-0">
                       {step.number}
                     </span>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center shrink-0">
                         <Icon size={22} className="text-accent" />
                       </div>
-                      <h3 className="font-display text-display-sm font-bold text-text">
+                      <h3 className="font-display text-xl sm:text-display-sm font-bold text-text leading-tight">
                         {step.title}
                       </h3>
                     </div>
