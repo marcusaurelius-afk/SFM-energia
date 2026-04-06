@@ -16,10 +16,11 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
     if (!maybeCtx) return
     const ctx: CanvasRenderingContext2D = maybeCtx
 
-    const CL = 260, CW = 90, CH = 100
-    const WW = 100
+    const S  = 1.55                          // scala globale
+    const CL = 260 * S, CW = 90 * S, CH = 100 * S
+    const WW = 100 * S
     const AX = 0.82, AY = 0.42
-    const OX = 400, OY = 300
+    const OX = 270, OY = 215
 
     function I(x: number, y: number, z: number): [number, number] {
       const px = x - y * AY
@@ -100,7 +101,7 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
       ctx.fillStyle = COL_TEXT
       ctx.font = '500 13px system-ui, -apple-system, sans-serif'
       ctx.textAlign = 'center'
-      ctx.fillText(phaseText.toUpperCase(), OX + 80, 170)
+      ctx.fillText(phaseText.toUpperCase(), OX + 130, OY - 120)
 
       ctx.fillStyle = COL_GROUND
       ctx.globalAlpha = 0.4
@@ -339,7 +340,7 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
         ctx.save()
         ctx.fillStyle = COL_BADGE_BG
         ctx.beginPath()
-        const bx = OX - 55, by = OY + 105, bw = 110, bh = 32, br = 4
+        const bx = OX - 85, by = OY + 163, bw = 170, bh = 44, br = 6
         ctx.moveTo(bx + br, by)
         ctx.lineTo(bx + bw - br, by)
         ctx.arcTo(bx + bw, by, bx + bw, by + br, br)
@@ -354,7 +355,7 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
         ctx.fillStyle = COL_BADGE_TEXT
         ctx.font = 'bold 16px system-ui, sans-serif'
         ctx.textAlign = 'center'
-        ctx.fillText('20 kWp', OX, OY + 126)
+        ctx.fillText('20 kWp', OX, OY + 190)
         ctx.restore()
       }
     }
