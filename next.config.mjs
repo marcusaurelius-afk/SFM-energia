@@ -1,6 +1,7 @@
 
 
 const nextConfig = {
+  transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
   images: {
     formats: ['image/avif', 'image/webp'],
   },

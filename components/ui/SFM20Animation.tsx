@@ -339,7 +339,17 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
         ctx.save()
         ctx.fillStyle = COL_BADGE_BG
         ctx.beginPath()
-        ctx.roundRect(OX - 55, OY + 105, 110, 32, 4)
+        const bx = OX - 55, by = OY + 105, bw = 110, bh = 32, br = 4
+        ctx.moveTo(bx + br, by)
+        ctx.lineTo(bx + bw - br, by)
+        ctx.arcTo(bx + bw, by, bx + bw, by + br, br)
+        ctx.lineTo(bx + bw, by + bh - br)
+        ctx.arcTo(bx + bw, by + bh, bx + bw - br, by + bh, br)
+        ctx.lineTo(bx + br, by + bh)
+        ctx.arcTo(bx, by + bh, bx, by + bh - br, br)
+        ctx.lineTo(bx, by + br)
+        ctx.arcTo(bx, by, bx + br, by, br)
+        ctx.closePath()
         ctx.fill()
         ctx.fillStyle = COL_BADGE_TEXT
         ctx.font = 'bold 16px system-ui, sans-serif'
