@@ -42,7 +42,7 @@ export function HowItWorks() {
                 Il container arriva sul tuo sito con camion standard. Posizionamento con gru in 15 minuti. Nessun permesso speciale per il trasporto.
               </p>
               <div className="flex items-start gap-2 bg-background-alt rounded-xl p-3 border border-gray-100">
-                <span className="text-accent mt-0.5" aria-hidden="true">→</span>
+                <span className="text-accent" aria-hidden="true">→</span>
                 <p className="text-sm text-text-muted">Dimensioni ISO 20&apos;: 6,06 × 2,44 × 2,59 m — passa su qualsiasi strada.</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ export function HowItWorks() {
                   Le ali solari si aprono con meccanismo brevettabile. 2 operatori, 30 minuti, zero attrezzature speciali.
                 </p>
                 <div className="flex items-start gap-2 bg-background-alt rounded-xl p-3 border border-gray-100">
-                  <span className="text-accent mt-0.5" aria-hidden="true">→</span>
+                  <span className="text-accent" aria-hidden="true">→</span>
                   <p className="text-sm text-text-muted">Superficie operativa: 6,06 × 9,60 m. 36 pannelli Jinko Solar 550W TOPCon.</p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export function HowItWorks() {
                 Colleghi le tue utenze alle prese CEE. L&apos;inverter ibrido gestisce tutto in automatico, anche di notte con le batterie.
               </p>
               <div className="flex items-start gap-2 bg-background-alt rounded-xl p-3 border border-gray-100">
-                <span className="text-accent mt-0.5" aria-hidden="true">→</span>
+                <span className="text-accent" aria-hidden="true">→</span>
                 <p className="text-sm text-text-muted">Monitoraggio remoto 24/7 via WiFi/4G. Dashboard con produzione e consumi in tempo reale.</p>
               </div>
             </div>
