@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Phone, Mail } from 'lucide-react'
+import { ArrowRight, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Section'
 
@@ -54,15 +54,6 @@ export function FinalCTA() {
                 className="ml-1 group-hover:translate-x-1 transition-transform duration-200"
               />
             </Button>
-            <Button
-              href="tel:+390200000000"
-              variant="outline"
-              size="lg"
-              className="border-white/20 text-white hover:bg-white/10 hover:border-white/40"
-            >
-              <Phone size={18} className="mr-2" />
-              Chiamaci direttamente
-            </Button>
           </div>
 
           {/* Trust items */}
@@ -91,19 +82,11 @@ export function FinalCTA() {
           className="mt-16 pt-10 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm"
         >
           <a
-            href="mailto:info@sfm-energy.it"
+            href="mailto:info@solarcrate.it"
             className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:underline group"
           >
             <Mail size={16} className="group-hover:text-accent transition-colors" />
-            info@sfm-energy.it
-          </a>
-          <span className="hidden sm:block text-gray-700" aria-hidden="true">|</span>
-          <a
-            href="tel:+390200000000"
-            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:underline group"
-          >
-            <Phone size={16} className="group-hover:text-accent transition-colors" />
-            +39 02 0000 0000
+            info@solarcrate.it
           </a>
         </motion.div>
       </Container>

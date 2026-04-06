@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Section'
 export const metadata: Metadata = {
   title: 'Privacy Policy e Cookie Policy',
   description:
-    'Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) per SFM Energy.',
+    'Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) per SolarCrate.',
   robots: { index: true, follow: false },
 }
 
@@ -36,11 +36,10 @@ export default function PrivacyPolicyPage() {
             Il Titolare del trattamento dei dati personali è:
           </p>
           <div className="bg-background-alt rounded-xl p-4 my-4 text-sm border border-gray-100">
-            <strong className="text-text">SFM Energy S.r.l.</strong> (startup innovativa)<br />
-            Via Placeholder 1, 20100 Milano (MI)<br />
-            P.IVA: 00000000000<br />
-            Email: <a href="mailto:info@sfm-energy.it" className="text-primary hover:underline">info@sfm-energy.it</a><br />
-            Telefono: +39 02 0000 0000
+            <strong className="text-text">SolarCrate S.r.l.</strong> (startup innovativa)<br />
+            Milano (MI)<br />
+            P.IVA: in corso di registrazione<br />
+            Email: <a href="mailto:info@solarcrate.it" className="text-primary hover:underline">info@solarcrate.it</a>
           </div>
 
           {/* 2 */}
@@ -180,8 +179,8 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p className="mt-3">
             Per esercitare i propri diritti, l&apos;interessato può inviare una richiesta via email a:{' '}
-            <a href="mailto:info@sfm-energy.it" className="text-primary hover:underline">
-              info@sfm-energy.it
+            <a href="mailto:info@solarcrate.it" className="text-primary hover:underline">
+              info@solarcrate.it
             </a>
           </p>
           <p className="mt-2">
@@ -197,7 +196,7 @@ export default function PrivacyPolicyPage() {
             8. Cookie Policy
           </h2>
           <p>
-            Il sito SFM Energy utilizza esclusivamente{' '}
+            Il sito SolarCrate utilizza esclusivamente{' '}
             <strong className="text-text">cookie tecnici strettamente necessari</strong> al
             funzionamento del sito. Non vengono utilizzati cookie di profilazione, cookie di
             terze parti per tracking o cookie analytics.
@@ -234,7 +233,7 @@ export default function PrivacyPolicyPage() {
             9. Sicurezza dei dati
           </h2>
           <p>
-            SFM Energy adotta misure tecniche e organizzative adeguate per proteggere i dati
+            SolarCrate adotta misure tecniche e organizzative adeguate per proteggere i dati
             personali da accesso non autorizzato, perdita o distruzione. Le comunicazioni
             con il sito avvengono tramite protocollo HTTPS con certificato SSL/TLS.
           </p>
@@ -252,7 +251,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="mt-10 pt-6 border-t border-gray-200 text-sm text-text-light">
             <p>
-              Informativa aggiornata a marzo 2026 · SFM Energy S.r.l. · P.IVA 00000000000
+              Informativa aggiornata a marzo 2026 · SolarCrate S.r.l. · P.IVA in corso di registrazione
             </p>
           </div>
         </div>

@@ -217,7 +217,7 @@ export function SavingsCalculator() {
                   color="red"
                 />
                 <ComparisonBar
-                  label="SFM Energy (noleggio solare)"
+                  label="SolarCrate (noleggio solare)"
                   value={results.totalSolar}
                   max={maxBar}
                   color="green"

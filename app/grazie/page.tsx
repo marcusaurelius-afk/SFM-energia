@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircle, ArrowLeft, Phone, Mail } from 'lucide-react'
+import { CheckCircle, ArrowLeft, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Section'
 
@@ -27,7 +27,7 @@ export default function GraziePage() {
         </h1>
 
         <p className="text-text-muted text-lg leading-relaxed mb-8">
-          Grazie per aver contattato SFM Energy.
+          Grazie per aver contattato SolarCrate.
           <br />
           Vi ricontattiamo entro{' '}
           <strong className="text-text font-semibold">24 ore lavorative</strong> con
@@ -67,29 +67,17 @@ export default function GraziePage() {
             <ArrowLeft size={18} className="mr-1" />
             Torna alla home
           </Button>
-          <Button href="tel:+390200000000">
-            <Phone size={18} className="mr-1" />
-            Chiamaci adesso
-          </Button>
         </div>
 
         {/* Contact alternatives */}
         <p className="text-sm text-text-light">
           Hai un&apos;urgenza?{' '}
           <a
-            href="tel:+390200000000"
-            className="text-primary font-medium hover:underline focus-visible:outline-none focus-visible:underline"
-          >
-            <Phone size={14} className="inline mr-1" />
-            +39 02 0000 0000
-          </a>{' '}
-          o{' '}
-          <a
-            href="mailto:info@sfm-energy.it"
+            href="mailto:info@solarcrate.it"
             className="text-primary font-medium hover:underline focus-visible:outline-none focus-visible:underline"
           >
             <Mail size={14} className="inline mr-1" />
-            info@sfm-energy.it
+            info@solarcrate.it
           </a>
         </p>
       </Container>

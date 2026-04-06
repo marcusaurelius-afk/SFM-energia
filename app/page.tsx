@@ -6,12 +6,13 @@ import { HowItWorks } from '@/components/sections/HowItWorks'
 import { SavingsCalculator } from '@/components/sections/SavingsCalculator'
 import { CustomerSegments } from '@/components/sections/CustomerSegments'
 import { TechnicalSpecs } from '@/components/sections/TechnicalSpecs'
+import { TeamSection } from '@/components/sections/TeamSection'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sfm-energy.it'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.solarcrate.it'
 
 export const metadata: Metadata = {
-  title: 'SFM Energy — Container Fotovoltaici Mobili | Noleggio e Vendita Lombardia',
+  title: 'SolarCrate — Container Fotovoltaici Mobili | Noleggio e Vendita Lombardia',
   description:
     'Container fotovoltaici da 20 kWp a noleggio o in vendita per cantieri, eventi e siti off-grid. Zero diesel, zero rumore, zero emissioni. Lombardia e Nord Italia.',
   alternates: {
@@ -23,19 +24,16 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'SFM Energy',
+    name: 'SolarCrate',
     description:
       'Noleggio e vendita di container fotovoltaici mobili da 20 kWp per cantieri, eventi e siti off-grid in Lombardia.',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     image: `${siteUrl}/og-image.jpg`,
-    telephone: '+39-02-0000-0000',
-    email: 'info@sfm-energy.it',
+    email: 'info@solarcrate.it',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Via Placeholder 1',
       addressLocality: 'Milano',
-      postalCode: '20100',
       addressRegion: 'Lombardia',
       addressCountry: 'IT',
     },
@@ -57,10 +55,7 @@ export default function Home() {
         closes: '18:00',
       },
     ],
-    sameAs: [
-      'https://www.linkedin.com/company/sfm-energy',
-      'https://www.instagram.com/sfmenergy',
-    ],
+    sameAs: [],
   }
 
   return (
@@ -76,6 +71,7 @@ export default function Home() {
       <SavingsCalculator />
       <CustomerSegments />
       <TechnicalSpecs />
+      <TeamSection />
       <FinalCTA />
     </>
   )

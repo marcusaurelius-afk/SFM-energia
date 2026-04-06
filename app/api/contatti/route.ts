@@ -19,7 +19,7 @@ function buildEmailHtml(data: z.infer<typeof schema>): string {
 <head><meta charset="UTF-8" /><title>Nuova richiesta preventivo</title></head>
 <body style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #1A1A1A;">
   <div style="background: #1B5E20; padding: 20px 24px; border-radius: 12px 12px 0 0;">
-    <h1 style="color: #F59E0B; margin: 0; font-size: 20px;">SFM Energy — Nuova richiesta preventivo</h1>
+    <h1 style="color: #F59E0B; margin: 0; font-size: 20px;">SolarCrate — Nuova richiesta preventivo</h1>
   </div>
   <div style="background: #F2F2ED; padding: 24px; border-radius: 0 0 12px 12px; border: 1px solid #E5E5E5;">
     <table width="100%" cellpadding="8" style="border-collapse: collapse;">
@@ -33,7 +33,7 @@ function buildEmailHtml(data: z.infer<typeof schema>): string {
     </table>
     <hr style="border: 1px solid #D1D5DB; margin: 20px 0;" />
     <p style="color: #6B6B6B; font-size: 12px; margin: 0;">
-      Richiesta ricevuta il ${new Date().toLocaleString('it-IT', { timeZone: 'Europe/Rome' })} · SFM Energy
+      Richiesta ricevuta il ${new Date().toLocaleString('it-IT', { timeZone: 'Europe/Rome' })} · SolarCrate
     </p>
   </div>
 </body>
@@ -43,7 +43,7 @@ function buildEmailHtml(data: z.infer<typeof schema>): string {
 
 function buildEmailText(data: z.infer<typeof schema>): string {
   const lines = [
-    'NUOVA RICHIESTA PREVENTIVO — SFM Energy',
+    'NUOVA RICHIESTA PREVENTIVO — SolarCrate',
     '='.repeat(40),
     `Nome: ${data.nome}`,
     data.azienda ? `Azienda: ${data.azienda}` : null,
@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
 
   const data = parse.data
   const apiKey = process.env.RESEND_API_KEY
-  const toEmail = process.env.CONTACT_EMAIL || 'info@sfm-energy.it'
+  const toEmail = process.env.CONTACT_EMAIL || 'info@solarcrate.it'
 
   if (!apiKey) {
     // Development fallback: log to console
@@ -91,10 +91,10 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(apiKey)
 
     const { error } = await resend.emails.send({
-      from: 'SFM Energy <noreply@sfm-energy.it>',
+      from: 'SolarCrate <noreply@solarcrate.it>',
       to: [toEmail],
       reply_to: data.email,
-      subject: `[SFM Energy] Nuova richiesta da ${data.nome}${data.azienda ? ` — ${data.azienda}` : ''}`,
+      subject: `[SolarCrate] Nuova richiesta da ${data.nome}${data.azienda ? ` — ${data.azienda}` : ''}`,
       html: buildEmailHtml(data),
       text: buildEmailText(data),
     })

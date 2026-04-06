@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/Button'
+import { SolarCrateLogo } from '@/components/ui/SolarCrateLogo'
 
 const navLinks = [
   { href: '/#prodotto', label: 'Prodotto' },
@@ -53,15 +55,10 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
-            aria-label="SFM Energy — Torna alla home"
+            className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
+            aria-label="SolarCrate — Torna alla home"
           >
-            <div className="flex items-center justify-center w-9 h-9 bg-primary rounded-lg">
-              <Zap className="text-accent" size={20} fill="currentColor" />
-            </div>
-            <span className="font-display font-bold text-xl text-text">
-              SFM <span className="text-primary">Energy</span>
-            </span>
+            <SolarCrateLogo variant="light" height={40} />
           </Link>
 
           {/* Desktop Nav */}
