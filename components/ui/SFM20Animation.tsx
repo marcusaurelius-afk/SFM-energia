@@ -98,11 +98,6 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
     function draw(theta: number, phaseText: string) {
       ctx.clearRect(0, 0, cvWidth, cvHeight)
 
-      ctx.fillStyle = COL_TEXT
-      ctx.font = '500 13px system-ui, -apple-system, sans-serif'
-      ctx.textAlign = 'center'
-      ctx.fillText(phaseText.toUpperCase(), OX + 130, OY - 120)
-
       ctx.fillStyle = COL_GROUND
       ctx.globalAlpha = 0.4
       const gpts = [I(-20, -20, 0), I(CL + 20, -20, 0), I(CL + 20, CW + 150, 0), I(-20, CW + 150, 0)]
@@ -336,28 +331,6 @@ export function SFM20Animation({ className }: SFM20AnimationProps) {
         ctx.restore()
       }
 
-      if (theta >= Math.PI / 2 - 0.05) {
-        ctx.save()
-        ctx.fillStyle = COL_BADGE_BG
-        ctx.beginPath()
-        const bx = OX - 85, by = OY + 163, bw = 170, bh = 44, br = 6
-        ctx.moveTo(bx + br, by)
-        ctx.lineTo(bx + bw - br, by)
-        ctx.arcTo(bx + bw, by, bx + bw, by + br, br)
-        ctx.lineTo(bx + bw, by + bh - br)
-        ctx.arcTo(bx + bw, by + bh, bx + bw - br, by + bh, br)
-        ctx.lineTo(bx + br, by + bh)
-        ctx.arcTo(bx, by + bh, bx, by + bh - br, br)
-        ctx.lineTo(bx, by + br)
-        ctx.arcTo(bx, by, bx + br, by, br)
-        ctx.closePath()
-        ctx.fill()
-        ctx.fillStyle = COL_BADGE_TEXT
-        ctx.font = 'bold 16px system-ui, sans-serif'
-        ctx.textAlign = 'center'
-        ctx.fillText('20 kWp', OX, OY + 190)
-        ctx.restore()
-      }
     }
 
     let theta = 0
