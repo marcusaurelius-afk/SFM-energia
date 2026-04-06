@@ -50,7 +50,7 @@ export function ModelViewer({ className }: ModelViewerProps) {
     >
       {loaded ? (
         <model-viewer
-          src="/solar-container-pbr.glb"
+          src="/solar-container-shaded.glb"
           alt="SolarCrate SFM-20 container solare fotovoltaico"
           auto-rotate="true"
           camera-controls="true"
