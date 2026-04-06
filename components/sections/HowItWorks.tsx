@@ -2,9 +2,14 @@
 
 import { motion } from 'framer-motion'
 import { Truck, SunMedium, Plug } from 'lucide-react'
+import dynamic from 'next/dynamic'
 import { Section, Container, SectionHeader } from '@/components/ui/Section'
 import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
-import { SFM20Animation } from '@/components/ui/SFM20Animation'
+
+const SFM20Animation = dynamic(
+  () => import('@/components/ui/SFM20Animation').then((m) => m.SFM20Animation),
+  { ssr: false, loading: () => <div className="w-full aspect-[5/3] bg-gray-100 rounded-2xl animate-pulse" /> }
+)
 
 const steps = [
   {
