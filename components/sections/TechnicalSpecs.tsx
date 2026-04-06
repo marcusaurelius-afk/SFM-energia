@@ -3,24 +3,9 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Download } from 'lucide-react'
-import dynamic from 'next/dynamic'
 import { Section, Container, SectionHeader } from '@/components/ui/Section'
 import { Button } from '@/components/ui/Button'
-
-const ModelViewer = dynamic(
-  () => import('@/components/ui/ModelViewer').then((m) => m.ModelViewer),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-full h-[420px] lg:h-[520px] rounded-2xl bg-gray-50 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-          <p className="text-sm text-text-muted">Caricamento modello 3D...</p>
-        </div>
-      </div>
-    ),
-  }
-)
+import { ModelViewer } from '@/components/ui/ModelViewer'
 
 const specGroups = [
   {
