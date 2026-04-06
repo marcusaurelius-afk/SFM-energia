@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, ChevronDown, Zap, ShieldCheck, Leaf } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -28,7 +29,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col justify-center bg-background overflow-hidden pt-20"
+      className="relative min-h-screen flex flex-col justify-center bg-background overflow-hidden pt-8 md:pt-12"
       aria-label="Hero — SolarCrate Container Fotovoltaici"
     >
       {/* Background geometric pattern */}
@@ -36,7 +37,6 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
       >
-        {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -44,13 +44,13 @@ export function Hero() {
             backgroundSize: '64px 64px',
           }}
         />
-        {/* Accent circle */}
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
       </div>
 
-      <Container className="relative z-10 py-16 md:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <Container className="relative z-10 py-10 md:py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[43%_57%] gap-8 lg:gap-10 items-center">
+
           {/* Text content */}
           <div>
             {/* Eyebrow */}
@@ -71,7 +71,7 @@ export function Hero() {
               initial="hidden"
               animate="visible"
               variants={fadeUp}
-              className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-text leading-[1.08] tracking-tight text-balance mb-6"
+              className="font-display text-5xl md:text-6xl lg:text-7xl font-black text-text leading-tight tracking-tight text-balance mb-6"
             >
               Energia solare mobile per{' '}
               <span className="text-primary">cantieri</span>,{' '}
@@ -148,39 +148,55 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             className="relative"
           >
-            {/* Main image */}
-            <img
-              src="/container-solarcrate.png"
-              alt="Container SolarCrate con ali solari aperte — vista frontale in cantiere"
-              className="w-full shadow-card-lg rounded-2xl object-cover aspect-[4/3]"
-            />
+            <div className="relative flex items-center justify-center w-full h-full">
+              {/* Amber glow behind image */}
+              <div
+                className="absolute inset-0 rounded-full blur-3xl scale-90 z-0"
+                style={{
+                  background: 'radial-gradient(circle, rgba(251,146,60,0.25) 0%, transparent 70%)',
+                }}
+                aria-hidden="true"
+              />
 
-            {/* Floating stat card */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-card-lg p-4 border border-gray-100 hidden sm:block"
-            >
-              <div className="font-display text-3xl font-bold text-primary leading-none">
-                €0
+              {/* Container image */}
+              <div className="relative z-10 w-full aspect-[4/3]">
+                <Image
+                  src="/container-solarcrate.png"
+                  alt="Container SolarCrate con ali solari aperte — vista frontale in cantiere"
+                  fill
+                  priority
+                  className="object-contain scale-110 translate-y-4 drop-shadow-2xl"
+                />
               </div>
-              <div className="text-sm text-text-muted mt-1">costo carburante</div>
-            </motion.div>
 
-            {/* Floating CO2 card */}
-            <motion.div
-              initial={{ opacity: 0, y: -16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
-              className="absolute -top-6 -right-6 bg-primary text-white rounded-2xl shadow-card-lg p-4 hidden sm:block"
-            >
-              <div className="font-display text-2xl font-bold text-accent leading-none">
-                57+ kWh
-              </div>
-              <div className="text-sm text-green-200 mt-1">produzione/giorno</div>
-            </motion.div>
+              {/* Badge: 57+ kWh — top right */}
+              <motion.div
+                initial={{ opacity: 0, y: -16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                className="absolute -top-3 -right-3 z-20 bg-primary text-white rounded-xl shadow-lg p-4 hidden sm:block"
+              >
+                <div className="font-display text-2xl font-bold text-accent leading-none">
+                  57+ kWh
+                </div>
+                <div className="text-sm text-green-200 mt-1">produzione/giorno</div>
+              </motion.div>
+
+              {/* Badge: €0 carburante — bottom left */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="absolute -bottom-3 -left-3 z-20 bg-white rounded-xl shadow-lg p-4 border border-gray-100 hidden sm:block"
+              >
+                <div className="font-display text-3xl font-bold text-primary leading-none">
+                  €0
+                </div>
+                <div className="text-sm text-text-muted mt-1">costo carburante</div>
+              </motion.div>
+            </div>
           </motion.div>
+
         </div>
       </Container>
 
