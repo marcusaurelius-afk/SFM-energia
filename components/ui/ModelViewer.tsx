@@ -54,8 +54,10 @@ export function ModelViewer({ className }: ModelViewerProps) {
           alt="SolarCrate SFM-20 container solare fotovoltaico"
           auto-rotate="true"
           camera-controls="true"
-          shadow-intensity="1"
+          shadow-intensity="1.5"
           rotation-per-second="20deg"
+          environment-image="neutral"
+          tone-mapping="neutral"
           loading="lazy"
           style={{ width: '100%', height: '100%', background: 'transparent' }}
         />
