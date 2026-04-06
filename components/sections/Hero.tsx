@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { ArrowRight, ChevronDown, Zap, ShieldCheck, Leaf } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Section'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 
 const badges = [
   { icon: Zap, label: '20 kWp installati' },
@@ -149,11 +148,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             className="relative"
           >
-            {/* Main image placeholder */}
-            <ImagePlaceholder
-              label="FOTO: Container SFM Energy con ali solari aperte — vista frontale in cantiere"
-              aspectRatio="aspect-[4/3]"
-              className="w-full shadow-card-lg border-0 bg-gray-100"
+            {/* Main image */}
+            <img
+              src="/container-solarcrate.png"
+              alt="Container SFM Energy con ali solari aperte — vista frontale in cantiere"
+              className="w-full shadow-card-lg rounded-2xl object-cover aspect-[4/3]"
             />
 
             {/* Floating stat card */}
