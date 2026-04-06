@@ -38,7 +38,6 @@ export default function PrivacyPolicyPage() {
           <div className="bg-background-alt rounded-xl p-4 my-4 text-sm border border-gray-100">
             <strong className="text-text">SolarCrate S.r.l.</strong> (startup innovativa)<br />
             Milano (MI)<br />
-            P.IVA: in corso di registrazione<br />
             Email: <a href="mailto:info@solarcrate.it" className="text-primary hover:underline">info@solarcrate.it</a>
           </div>
 
@@ -251,7 +250,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="mt-10 pt-6 border-t border-gray-200 text-sm text-text-light">
             <p>
-              Informativa aggiornata a marzo 2026 · SolarCrate S.r.l. · P.IVA in corso di registrazione
+              Informativa aggiornata a marzo 2026 · SolarCrate S.r.l.
             </p>
           </div>
         </div>

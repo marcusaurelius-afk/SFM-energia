@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-xs">
-            © 2026 SolarCrate S.r.l. · P.IVA in corso di registrazione
+            © 2026 SolarCrate S.r.l.
           </p>
           <p className="text-gray-600 text-xs">
             Tutti i diritti riservati. Milano, Lombardia.

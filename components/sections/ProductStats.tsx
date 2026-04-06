@@ -1,6 +1,5 @@
 import { Section, Container, SectionHeader } from '@/components/ui/Section'
 import { StatCard } from '@/components/ui/StatCard'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 
 const stats = [
   {
@@ -48,7 +47,7 @@ export function ProductStats() {
           subtitle="Un'unità autonoma e completa: pannelli, batterie, inverter ibrido. Consegnata, dispiegata, operativa."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {stats.map((stat, i) => (
             <StatCard
               key={stat.label}
@@ -59,18 +58,6 @@ export function ProductStats() {
               index={i}
             />
           ))}
-        </div>
-
-        {/* Product image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <ImagePlaceholder
-            label="FOTO: Container SolarCrate chiuso — pronto per il trasporto su camion"
-            aspectRatio="aspect-[16/10]"
-          />
-          <ImagePlaceholder
-            label="FOTO: Container SolarCrate con ali aperte — vista aerea con pannelli esposti"
-            aspectRatio="aspect-[16/10]"
-          />
         </div>
       </Container>
     </Section>
