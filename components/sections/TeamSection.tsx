@@ -14,15 +14,13 @@ interface Founder {
 
 const founders: Founder[] = [
   {
-    image: '/team/simone-ferrario.jpg',
-    initials: 'SF',
-    name: 'Simone Ferrario',
+    initials: 'MC',
+    name: 'Marco Cai',
     role: 'Co-fondatore',
   },
   {
-    image: '/team/marco-molteni.jpg',
-    initials: 'MM',
-    name: 'Marco Molteni',
+    initials: 'CH',
+    name: 'Carlo Haro',
     role: 'Co-fondatore',
   },
 ]
